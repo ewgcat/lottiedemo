@@ -16,12 +16,10 @@ class MainActivity : AppCompatActivity() {
     }
     fun playSplashAnimation() {
         animation_view.setAnimation("splash_animate.json")
-        animation_view.setAnimation("refresh_header.json")
         animation_view.addAnimatorListener(object : AnimatorListener {
             override fun onAnimationStart(animation: Animator) {}
             override fun onAnimationEnd(animation: Animator) {
-                animation_view.setAnimation("refresh_header.json")
-                animation_view.playAnimation()
+
             }
 
             override fun onAnimationCancel(animation: Animator) {}
